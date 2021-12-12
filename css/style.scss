@@ -1,0 +1,94 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Murecho", sans-serif;
+  text-decoration: none;
+}
+.section {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.507)),
+    url("https://images.pexels.com/photos/235621/pexels-photo-235621.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .card {
+    width: Min(calc(550px - 1px), calc(100% - 1px));
+    height: auto;
+    background-color: rgba(31, 5, 21, 0.233);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50px;
+    padding: 30px;
+    backdrop-filter: blur(5px);
+    .search {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .search_bar {
+        width: 400px;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        background-color: rgba(250, 235, 215, 0.342);
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        font-size: 16px;
+        text-transform: capitalize;
+      }
+      .search_btn {
+        padding: 10px 15px;
+        border-radius: 10px;
+        border: none;
+        background-color: rgba(250, 235, 215, 0.342);
+        color: #fff;
+        font-size: 14px;
+      }
+    }
+    .weather {
+      color: #fff;
+      width: 100%;
+      height: auto;
+      text-transform: capitalize;
+      line-height: 1.7;
+      text-align: center;
+      .city {
+        font: 25px;
+        letter-spacing: 2px;
+      }
+      .temperature {
+        font-size: 50px;
+      }
+      .icon_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .icon{
+          mix-blend-mode:lighten;
+        }
+      }
+      .description,
+      .humidity,
+      .wind,
+      .sunrise,
+      .sunset {
+        font-size: 16px;
+      }
+      .humidity_wrapper,
+      .sunrise_wrappper{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
+      }
+    }
+  }
+}
+::placeholder {
+  color: #fff;
+}
